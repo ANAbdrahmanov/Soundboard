@@ -7,6 +7,7 @@ Soundboard::Soundboard(QWidget *parent) :
 {
     ui->setupUi(this);
     player = new QMediaPlayer(this);
+    testPlay = new QPushButton(this);
 }
 
 Soundboard::~Soundboard()

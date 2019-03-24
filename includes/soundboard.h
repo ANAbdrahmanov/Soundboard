@@ -19,8 +19,8 @@ public:
 
 private:
     QMediaPlayer* player;
-    QPushButton testPlay;
-    QPushButton testPause;
+    QPushButton* testPlay;
+    QPushButton* testPause;
     Ui::Soundboard *ui;
 };
 
