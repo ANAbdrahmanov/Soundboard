@@ -26,10 +26,14 @@ CONFIG += c++11
 
 SOURCES += \
         src/main.cpp \
-        src/soundboard.cpp
+        src/soundboard.cpp \
+    src/track.cpp \
+    src/playlist.cpp
 
 HEADERS += \
-        $$PWD/includes/soundboard.h
+        includes/soundboard.h \
+    includes/track.h \
+    includes/playlist.h
 
 INCLUDEPATH += \
         $$PWD/includes

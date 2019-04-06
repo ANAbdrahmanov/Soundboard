@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QMediaPlayer>
+#include <QListWidget>
 
 namespace Ui {
 class Soundboard;
@@ -17,10 +18,16 @@ public:
     explicit Soundboard(QWidget *parent = nullptr);
     ~Soundboard();
 
+
+
 private:
+    //QString soundsDirectory;???
+    QListWidget* playlists;
     QMediaPlayer* player;
     QPushButton* testPlay;
-    QPushButton* testPause;
+    QPushButton* testStop;
+    QPushButton* testAdd;
+    QPushButton* testRemove;
     Ui::Soundboard *ui;
 };
 
