@@ -1,18 +1,22 @@
 #include "track.h"
 
-Track::Track(QString n, QString p){
+Track::Track(QString n, int v = 100){
     name = n;
-    path = p;
+    volume = v;
 }
 
 QString Track::getName(){
     return name;
 }
 
-QString Track::getPath(){
-    return path;
+//QString Track::getPath(){
+//    return path;
+//}
+
+void Track::setName(QString n){ //\!!!!расширить до ренейма самого файла
+    name = n;
 }
 
-void Track::setName(QString n){
-    name = n;
+void Track::setVolume(int v){
+    volume = v;
 }
