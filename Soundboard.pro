@@ -26,11 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         src/main.cpp \
+    src/playliststablemodel.cpp \
         src/soundboard.cpp \
     src/track.cpp \
     src/playlist.cpp
 
 HEADERS += \
+    includes/playliststablemodel.h \
         includes/soundboard.h \
     includes/track.h \
     includes/playlist.h

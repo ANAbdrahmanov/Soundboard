@@ -5,7 +5,6 @@
 #include <QPushButton>
 #include <QMediaPlayer>
 #include <QTableWidget>
-#include <vector>
 #include "playlist.h"
 
 namespace Ui {
@@ -17,7 +16,7 @@ class Soundboard : public QWidget
     Q_OBJECT
 
     void initGui();//???
-    void addPlaylist();
+    Q_SLOT void addPlaylist();
     void saveSettings();
     void loadSettings();
 
@@ -28,9 +27,7 @@ public:
 
 
 private:
-    std::vector<Playlist> playlists;
-
-    QTableWidget* playlistsTable;
+    QTableView* tableView;
     QMediaPlayer* player;
     QPushButton* testPlay;
     QPushButton* testStop;
